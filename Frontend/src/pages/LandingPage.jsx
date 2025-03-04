@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 import logo from '../assets/Frame.png'
 import analyticsimg from '../assets/Analytics.png'
-import revenue from '../assets/Div.png'
+import revenue from '../assets/div.png'
 import song1 from '../assets/Song1.png'
 import song2 from '../assets/Song2.png'
 import song3 from '../assets/Song3.png'
