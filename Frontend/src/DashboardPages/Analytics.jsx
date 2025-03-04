@@ -15,8 +15,8 @@ import {
   Legend,
 } from 'chart.js';
 import { Line, Bar, Doughnut } from 'react-chartjs-2';
-const VITE_BACK_URL = import.meta.env.VITE_BACK_URL;
 import './AnalyticsPage.css';
+const VITE_BACK_URL = import.meta.env.VITE_BACK_URL;
 
 ChartJS.register(
   CategoryScale,
