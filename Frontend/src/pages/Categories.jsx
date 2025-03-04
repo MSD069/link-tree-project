@@ -50,7 +50,7 @@ const CategorySelector = () => {
         return;
       }
 
-      const response = await fetch(`${VITE_BACK_URL}/save-user`, {
+      const response = await fetch(`${VITE_BACK_URL}/api/save-user`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
