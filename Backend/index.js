@@ -128,7 +128,7 @@ app.get('/',(req,res)=>{
   res.send("hello world");
 });
 // Signup
-app.post('/api/signup', async (req, res) => {
+app.post('/signup', async (req, res) => {
   try {
     const { firstname, lastname, email, password, confirmPassword } = req.body;
     if (!firstname || !lastname || !email || !password || !confirmPassword) {
