@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import banner from '../assets/Banner.png';
-import logo from '../assets/Sparklogo.png';
+import logo from '../assets/sparklogo.png';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import styles from './LoginPage.module.css';
