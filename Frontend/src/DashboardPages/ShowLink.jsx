@@ -3,6 +3,7 @@ import AddLinkDialog from "./AddLinkDialog";
 import "./ShowLink.css";
 import axios from "axios";
 import { useSettings } from "../context/SettingsContext";
+const VITE_BACK_URL = import.meta.env.VITE_BACK_URL;
 
 export default function ShowLink() {
   const { links, addLink, updateLink, deleteLink, fetchLinks } = useSettings();
@@ -89,7 +90,7 @@ export default function ShowLink() {
     const linkId = links[index]._id;
     try {
       await axios.post(
-        `http://localhost:3000/links/${linkId}/click`,
+        `${VITE_BACK_URL}/links/${linkId}/click`,
         {},
         { headers: { Authorization: `Bearer ${token}` } }
       );
