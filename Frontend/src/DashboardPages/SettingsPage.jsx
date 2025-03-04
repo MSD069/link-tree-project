@@ -3,6 +3,7 @@ import axios from 'axios';
 import { toast } from 'react-toastify';
 import './SettingsPage.css';
 import { useSettings } from '../context/SettingsContext';
+const VITE_BACK_URL = import.meta.env.VITE_BACK_URL;
 
 const SettingsPage = () => {
   const [firstName, setFirstName] = useState(''); // Default to empty string
@@ -20,7 +21,7 @@ const SettingsPage = () => {
     const fetchUserData = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('http://localhost:3000/user', {
+        const response = await axios.get(`${VITE_BACK_URL}/user`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         const { firstname, lastname, email } = response.data || {}; // Handle potential missing data
@@ -51,7 +52,7 @@ const SettingsPage = () => {
         updateData.password = password;
         updateData.confirmPassword = confirmPassword;
       }
-      await axios.put('http://localhost:3000/update-profile', updateData, {
+      await axios.put(`${VITE_BACK_URL}/update-profile`, updateData, {
         headers: { Authorization: `Bearer ${token}` },
       });
       toast.success('Profile updated successfully');
