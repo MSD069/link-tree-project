@@ -124,10 +124,9 @@ const authenticateToken = (req, res, next) => {
 };
 
 // Routes
-app.get('/',()=>{
+app.get('/',(req,res)=>{
   res.send("hello world");
-}
-})
+});
 // Signup
 app.post('/signup', async (req, res) => {
   try {
