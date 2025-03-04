@@ -4,6 +4,7 @@ import logo from "../assets/sparklogo.png";
 import banner from "../assets/Banner.png";
 import { NavLink, useNavigate } from "react-router-dom";
 import axios from "axios";
+  const VITE_BACK_URL = import.meta.env.VITE_BACK_URL;
 
 function SignupForm() {
   const [formData, setFormData] = useState({
@@ -13,7 +14,6 @@ function SignupForm() {
     password: "",
     confirmPassword: "",
   });
-  const VITE_BACK_URL = import.meta.env.VITE_BACK_URL;
 
   const [errors, setErrors] = useState({});
   const [touched, setTouched] = useState({});
