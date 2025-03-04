@@ -10,7 +10,7 @@ import buyMeAgift from '../assets/BuyMeAgift.png';
 import cameo from '../assets/Cameo.png';
 import clubhouse from '../assets/Clubhouse.png';
 import community from '../assets/Community.png';
-import contactDetails from '../assets/Contactdetails.png';
+import contactDetails from '../assets/ContactDetails.png';
 
 const Sample = () => {
     const platformsData = [
