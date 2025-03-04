@@ -14,7 +14,7 @@ const JWT_SECRET = process.env.JWT_SECRET || 'your_jwt_secret';
 // Middleware
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ limit: '50mb', extended: true }));
-app.use(cors({ origin: 'https://link-tree-project-bkay.vercel.app' }));
+app.use(cors())
 
 // Cloudinary Configuration
 cloudinary.config({
