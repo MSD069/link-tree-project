@@ -4,12 +4,12 @@ import logo from '../assets/sparklogo.png';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import styles from './LoginPage.module.css';
+  const VITE_BACK_URL = import.meta.env.VITE_BACK_URL;
 
 const LoginPage = () => {
   const [formData, setFormData] = useState({ email: '', password: '' });
   const [error, setError] = useState('');
   const navigate = useNavigate();
-  const VITE_BACK_URL = import.meta.env.VITE_BACK_URL;
   console.log(VITE_BACK_URL);
 
   const handleSubmit = async (e) => {
