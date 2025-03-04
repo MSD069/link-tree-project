@@ -7,6 +7,7 @@ import axios from "axios";
 import { useSettings } from "../context/SettingsContext";
 import "./LinkPage.css";
 import { toast } from 'react-toastify';
+const VITE_BACK_URL = import.meta.env.VITE_BACK_URL;
 
 const LinkPage = () => {
   const [imagePreview, setImagePreview] = useState(avatarimg);
@@ -31,7 +32,7 @@ const LinkPage = () => {
 
   const fetchProfile = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/profile", {
+      const response = await axios.get(`${VITE_BACK_URL}/profile`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       const { username, profile, userId } = response.data;
