@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./SignupForm.css";
 import logo from "../assets/sparklogo.png";
-import banner from "../assets/banner.png";
+import banner from "../assets/Banner.png";
 import { NavLink, useNavigate } from "react-router-dom";
 import axios from "axios";
 
