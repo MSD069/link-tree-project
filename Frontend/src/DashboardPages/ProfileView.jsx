@@ -6,6 +6,7 @@ import "./ProfileView.css";
 import avatarimg from "../assets/Avatar.png";
 import { toast } from "react-toastify";
 import { v4 as uuidv4 } from 'uuid';
+const VITE_BACK_URL = import.meta.env.VITE_BACK_URL;
 
 export default function ProfileView() {
   const { userId } = useParams();
@@ -23,7 +24,7 @@ export default function ProfileView() {
 
   const fetchPublicProfile = async () => {
     try {
-      const response = await axios.get(`http://localhost:3000/profile/public/${userId}?t=${Date.now()}`, {
+      const response = await axios.get(`${VITE_BACK_URL}/public/${userId}?t=${Date.now()}`, {
         headers: { 'Cache-Control': 'no-cache' }
       });
       if (response.status === 200) {
@@ -41,7 +42,7 @@ export default function ProfileView() {
   const handleLinkClick = async (linkId) => {
     try {
       await axios.post(
-        `http://localhost:3000/links/${linkId}/click`,
+        `${VITE_BACK_URL}/links/${linkId}/click`,
         {},
         { headers: { 'x-visitor-id': visitorId } }
       );
@@ -53,7 +54,7 @@ export default function ProfileView() {
   const handleCTAClick = async () => {
     try {
       await axios.post(
-        `http://localhost:3000/cta/click/${userId}`,
+        `${VITE_BACK_URL}/cta/click/${userId}`,
         {},
         { headers: { 'x-visitor-id': visitorId } }
       );
