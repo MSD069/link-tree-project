@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./CategorySelector.css";
 import banner from "../assets/Banner.png";
 import logo from "../assets/sparklogo.png";
+const VITE_BACK_URL = import.meta.env.VITE_BACK_URL;
 
 const categories = [
   { name: "Business", icon: "📊" },
@@ -49,7 +50,7 @@ const CategorySelector = () => {
         return;
       }
 
-      const response = await fetch("http://localhost:3000/api/save-user", {
+      const response = await fetch(`${VITE_BACK_URL}/save-user`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
