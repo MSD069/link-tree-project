@@ -6,7 +6,7 @@ import audiomack from '../assets/Audiomack.png';
 import bandsintown from '../assets/Bandsintown.png';
 import bonfire from '../assets/Bonfire.png';
 import books from '../assets/Books.png';
-import buyMeAgift from '../assets/buymeagift.png';
+import buyMeAgift from '../assets/BuyMeAgift.png';
 import cameo from '../assets/Cameo.png';
 import clubhouse from '../assets/Clubhouse.png';
 import community from '../assets/Community.png';
