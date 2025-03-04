@@ -15,6 +15,7 @@ import {
   Legend,
 } from 'chart.js';
 import { Line, Bar, Doughnut } from 'react-chartjs-2';
+const VITE_BACK_URL = import.meta.env.VITE_BACK_URL;
 import './AnalyticsPage.css';
 
 ChartJS.register(
@@ -57,7 +58,7 @@ const AnalyticsPage = () => {
         return;
       }
       try {
-        const response = await axios.get('http://localhost:3000/analytics', {
+        const response = await axios.get(`${VITE_BACK_URL}/analytics`, {
           headers: { Authorization: `Bearer ${token}` },
           params: { startDate, endDate },
         });
