@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import banner from '../assets/banner.png';
+import banner from '../assets/Banner.png';
 import logo from '../assets/Sparklogo.png';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
