@@ -10,6 +10,8 @@ require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 const JWT_SECRET = process.env.JWT_SECRET || 'your_jwt_secret';
+const MONGO_URI=process.env.MONGO_URI;
+
 
 // Middleware
 app.use(express.json({ limit: '50mb' }));
@@ -40,7 +42,7 @@ const upload = multer({
 });
 
 // Connect to MongoDB
-mongoose.connect('mongodb://127.0.0.1:27017/Linktree', {
+mongoose.connect(MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 }).then(() => {
@@ -124,9 +126,7 @@ const authenticateToken = (req, res, next) => {
 };
 
 // Routes
-app.get('/',(req,res)=>{
-  res.send("hello world");
-});
+
 // Signup
 app.post('/signup', async (req, res) => {
   try {
