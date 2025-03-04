@@ -14,6 +14,30 @@ import { SettingsProvider } from './context/SettingsContext';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+const ProtectedRoute = ({ children }) => {
+  const token = localStorage.getItem('token');
+  const categoryCompleted = localStorage.getItem('categoryCompleted');
+  if (!token) return <Navigate to="/login" replace />;
+  if (!categoryCompleted) return <Navigate to="/about" replace />;
+  return children;
+};
+
+const CategoryProtectedRoute = ({ children }) => {
+  const token = localStorage.getItem('token');
+  const categoryCompleted = localStorage.getItem('categoryCompleted');
+  if (!token) return <Navigate to="/login" replace />;
+  if (categoryCompleted) return <Navigate to="/dashboard" replace />;
+  return children;
+};
+
+const AuthRoute = ({ children }) => {
+  const token = localStorage.getItem('token');
+  const categoryCompleted = localStorage.getItem('categoryCompleted');
+  if (token && categoryCompleted) return <Navigate to="/dashboard" replace />;
+  if (token && !categoryCompleted && children.type !== LoginPage) return <Navigate to="/about" replace />;
+  return children;
+};
+
 function App() {
   return (
     <BrowserRouter>
@@ -21,10 +45,10 @@ function App() {
         <ToastContainer />
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/signup" element={<SignupPage />} />
-          <Route path="/about" element={<Categories />} />
-          <Route path="/dashboard" element={<Dashboard />}>
+          <Route path="/login" element={<AuthRoute><LoginPage /></AuthRoute>} />
+          <Route path="/signup" element={<AuthRoute><SignupPage /></AuthRoute>} />
+          <Route path="/about" element={<CategoryProtectedRoute><Categories /></CategoryProtectedRoute>} />
+          <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>}>
             <Route index element={<LinkPage />} />
             <Route path="appearance" element={<Appearance />} />
             <Route path="analytics" element={<Analytics />} />
