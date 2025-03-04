@@ -2,15 +2,15 @@ import React from 'react';
 import styles from './sample.module.css';
 
 // Updated import paths
-import audiomack from '../assets/audiomack.png';
-import bandsintown from '../assets/bandsintown.png';
-import bonfire from '../assets/bonfire.png';
-import books from '../assets/books.png';
-import buyMeAgift from '../assets/buymeagift.png';
-import cameo from '../assets/cameo.png';
-import clubhouse from '../assets/clubhouse.png';
-import community from '../assets/community.png';
-import contactDetails from '../assets/contactdetails.png';
+import audiomack from '../assets/Audiomack.png';
+import bandsintown from '../assets/Bandsintown.png';
+import bonfire from '../assets/Bonfire.png';
+import books from '../assets/Books.png';
+import buyMeAgift from '../assets/Buymeagift.png';
+import cameo from '../assets/Cameo.png';
+import clubhouse from '../assets/Clubhouse.png';
+import community from '../assets/Community.png';
+import contactDetails from '../assets/Contactdetails.png';
 
 const Sample = () => {
     const platformsData = [
