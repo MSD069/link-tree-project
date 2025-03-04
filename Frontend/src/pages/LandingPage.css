@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+
+    margin: 0;
+
+
+}
+
+
+.Main-header {
+    display: flex;
+    flex-wrap: wrap;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 120px;
+    padding: 10px 20px;
+    margin: 10px;
+
+
+}
+
+.logo {
+    width: 270px;
+    height: 70px;
+}
+
+.Sign-up-free-btn {
+    background-color: #28A263;
+    color: #fff;
+    border-radius: 120px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+
+.Main-content {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.container1 {
+    display: flex;
+    width: 40VW;
+    height: 60vh;
+    margin: 50px;
+    padding: 20px;
+    flex-direction: column;
+
+
+
+
+}
+
+.Main-content-heading {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.Main-content-description {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.Free-spark-btn {
+    background-color: #28A263;
+    color: #fff;
+    width: 10vw;
+    border-radius: 120px;
+    padding: 10px 25px;
+    cursor: pointer;
+    border: none;
+    top: 20%;
+    position: relative;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.analyticsimg {
+    width: 40vw;
+    height: 60vh;
+}
+
+.container3 {
+    display: flex;
+    width: 100%;
+
+
+}
+
+.child8 {
+    border: 2px solid black;
+
+
+}
+
+.child9 {
+    border: 2px solid black;
+
+}
+
+.Div-p {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 35px;
+    width: 40vw;
+    margin: 50px;
+}
+
+.Song-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 40vw;
+    margin: 50px;
+    background-color: #C6C6C6;
+    border-radius: 16px;
+}
+
+.song-icon {
+    width: 30%;
+    height: auto;
+}
+
+.song-icon1 {
+    width: 40%;
+    height: auto;
+}
+
+.description1 {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 10%;
+}

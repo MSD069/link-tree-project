@@ -1,0 +1,251 @@
+.container-LinkPage {
+  display: flex;
+  gap: 5rem !important;
+}
+
+/* Custom toast styles */
+.Toastify__toast--success {
+  background-color: #4caf50;
+}
+
+.Toastify__toast--error {
+  background-color: #f44336;
+}
+
+.Toastify__toast--info {
+  background-color: #2196f3;
+}
+
+.profile-Avatar-name {
+  display: flex;
+}
+
+.mobile-content {
+  padding: 2rem !important;
+}
+
+.profile-image {
+  display: block;
+  margin: 10px auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.banner-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 25vh;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.profile-image-banner {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.color-box {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.brown {
+  background: #3C2A1E;
+}
+
+.white {
+  background: #FFFFFF;
+  border: 1px solid #ccc;
+}
+
+.black {
+  background: #000000;
+}
+
+.save-button1 {
+  margin-top: 20px;
+  padding: 10px;
+  background: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.profile-card {
+
+  width: 100%;
+  background: #fff;
+  border-radius: 25px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 5rem;
+
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 80%;
+  margin-left: 1rem;
+}
+
+.upload-btn,
+.remove-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 56px;
+}
+
+.remove-btn {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.remove-btn:not(:disabled) {
+  background: #dc3545;
+  cursor: pointer;
+}
+
+.info-section {
+  margin-top: 12px;
+  text-align: left;
+}
+
+.profile-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.bio-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.bio-container textarea {
+  width: 100%;
+  padding: 6px;
+
+  border-radius: 4px;
+
+  background: #F6F7F5;
+}
+
+.char-count {
+  font-size: 12px;
+  text-align: right;
+  color: gray;
+}
+
+/* Add these styles to LinkPage.css or create a new section for username input */
+.username-input-section {
+  margin-bottom: 16px;
+}
+
+.username-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.username-placeholder {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  background: #F6F7F5;
+}
+
+.username-placeholder:hover {
+  background: #f0f0f0;
+}
+
+.share-button {
+  position: fixed;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px;
+  right: 0%;
+}
+
+.banner {
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 25px;
+}
+
+.bio-input {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  background: #F6F7F5;
+  border: none;
+}
+
+.main-container {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+
+.custom-color-picker-1 {
+  display: flex;
+  gap: 5px;
+}
+
+.color-button{
+  border: none;
+  width: 40%;
+  height: 3.5vh;
+  border-radius: 5px;
+}
+.color-swatch1{
+  width: 8%;
+  height: 3.5vh;
+  border-radius: 5px;
+}
+.action-buttons{
+  display: flex;
+  justify-content: flex-end;
+}

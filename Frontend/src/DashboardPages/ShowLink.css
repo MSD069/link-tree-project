@@ -1,0 +1,99 @@
+.show-link-container {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 25px;
+   width: 30vw;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .button.active {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .button.inactive {
+    background-color: #ccc;
+    color: black;
+  }
+  
+  .add-button {
+    padding: 8px 16px;
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 65px;
+    cursor: pointer;
+  }
+  
+  .link-list {
+    margin-top: 20px;
+    overflow-y: auto;
+    height: 30vh;
+  }
+  .link-item {
+    
+    margin-bottom: 15px;
+    padding: 20px;
+    background-color: #F3F3F1;
+    border-radius: 20px;
+  }
+  
+  .edit-icon {
+    margin-left: 8px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .edit-icon:hover {
+    color: #007bff; /* Optional: Change color on hover */
+  }
+  .edit-input {
+    width: 80%;
+    padding: 4px;
+    margin: 2px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  
+  .delete-icon {
+    margin-left: 8px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .delete-icon:hover {
+    color: #ff0000; /* Optional: Red on hover to indicate deletion */
+  }
+  
+  
+
+  .logout-button {
+    padding: 8px 16px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .logout-button:hover {
+    background-color: #c82333;
+  }
+  .link-url{
+    text-decoration: none;
+  }

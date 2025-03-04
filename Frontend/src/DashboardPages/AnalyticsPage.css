@@ -1,0 +1,113 @@
+.analytics-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.overview {
+  margin-bottom: 20px;
+ 
+}
+
+.overview h2 {
+  margin: 0 0 10px 0;
+  color: #000000;
+}
+
+.overview p {
+  margin: 0 0 15px 0;
+  color: #666;
+}
+
+.date-filter {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.date-picker {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.stat {
+  flex: 1;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  color: #fff;
+}
+
+.link-stats { background-color: #3EE58F; }
+.shop-stats { background-color: #94E9B8; }
+.cta-stats { background-color: #94E9B8; }
+
+.stat h3 {
+  margin: 0 0 5px 0;
+  font-size: 1em;
+}
+
+.stat p {
+  margin: 0;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.charts {
+  display: grid;
+  gap: 20px;
+}
+
+.total-clicks, .traffic-by-device, .sites, .traffic-by-links {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.traffic-charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #000000;
+}
+.stats button {
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  flex: 1;
+  margin: 0 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.stats button:hover {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.stats button h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.stats button p {
+  margin: 5px 0 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}

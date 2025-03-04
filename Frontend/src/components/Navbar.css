@@ -1,0 +1,42 @@
+.container-Navbar {
+  display: flex;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* .active {
+  
+
+  
+} */
+.btn {
+  width: 100%;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  transition: background-color 0.2s;
+}
+
+.sidebar {
+  width: 250px;
+  background: #fff;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+

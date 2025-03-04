@@ -1,0 +1,266 @@
+.phone {
+  width: 300px;
+  height: 600px;
+  background: white;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  border: 12px solid #000000;
+  position: relative;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  margin: 20px;
+}
+
+.phone::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  position: relative;
+ 
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  background: var(--bg-color, #ffffff);
+  color: var(--lines-color, #000000);
+}
+
+
+.header {
+  text-align: center;
+  margin-bottom: 24px;
+  background-color: #000000;
+  width: 100%;
+  height: 30%;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.mobile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+  margin-top: 20px;
+}
+
+.username {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  color: var(--lines-color, #000000);
+}
+
+.bio {
+  font-size: 14px;
+  margin-top: 8px;
+  color: var(--lines-color, #000000);
+}
+
+.tab-container {
+  display: flex;
+  gap: 8px;
+  background: #f5f5f5;
+  padding: 4px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  width: fit-content;
+}
+
+.tab-button1 {
+  padding: 8px 16px;
+ 
+  border-radius: 25px;
+  cursor: pointer;
+  background: transparent;
+  /* color: var(--lines-color, #666); */
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+  background-color: #28A263;
+  color: white;
+  border: none;
+}
+
+.tab-button.active {
+  background: var( #28A263);
+  color: var(--lines-color, #333);
+  box-shadow: 0 2px 4px rgba(11, 231, 40, 0.05);
+
+}
+
+.links-list {
+  width: 100%;
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 24px;
+  padding: 0 4px;
+}
+
+.links-list.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.links-list.carousel {
+  display: flex;
+  overflow-x: auto; /* Ensure horizontal scrolling */
+  overflow-y: hidden;
+  padding-bottom: 12px;
+  height: 60%;
+  scrollbar-width: thin; /* Show a thin scrollbar */
+  -ms-overflow-style: auto; /* Enable scrollbar for IE/Edge */
+  width: 100%;
+  gap: 10%;
+}
+
+.links-list.carousel::-webkit-scrollbar {
+  height: 8px; /* Adjust height for horizontal scrollbar */
+}
+
+.links-list.carousel::-webkit-scrollbar-track {
+  background: transparent; /* Transparent track for clean look */
+}
+
+.links-list.carousel::-webkit-scrollbar-thumb {
+  background: #ddd; /* Light gray thumb for visibility */
+  border-radius: 4px; /* Rounded corners for thumb */
+}
+
+.links-list.carousel .mobile-link {
+  flex: 0 0 200px; /* Fixed width for each card to ensure scrolling */
+  height: 70%;
+}
+
+.mobile-link {
+  display: block;
+  padding: 12px 24px;
+  margin: 8px 0;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.2s;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: var(--font, 'DM Sans');
+}
+
+.mobile-link.fill {
+  background: var(--button-color, #000000);
+  color: var(--button-font-color, #FFFFFF);
+  border: none;
+}
+
+.mobile-link.outline {
+  background: transparent;
+  border: 2px solid var(--button-color, #000000);
+  color: var(--button-color, #000000);
+}
+
+.mobile-link.hard-shadow {
+  background: white;
+  border: 2px solid var(--button-color, #000000);
+  box-shadow: 4px 4px 0 var(--button-color, #000000);
+  transform: translate(-2px, -2px);
+}
+
+.mobile-link.hard-shadow:hover {
+  transform: translate(0, 0);
+}
+
+.mobile-link.soft-shadow {
+  background: white;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: var(--button-color, #000000);
+}
+
+.mobile-link.special-torn {
+  background: var(--button-color, #000000);
+  color: var(--button-font-color, #FFFFFF);
+  clip-path: polygon(0% 0%, 100% 3%, 100% 97%, 0% 100%);
+}
+
+.mobile-link.special-double {
+  background: transparent;
+  border: 2px solid var(--button-color, #000000);
+  outline: 1px solid var(--button-color, #000000);
+  outline-offset: 3px;
+  color: var(--button-color, #000000);
+}
+
+.connect-btn {
+  width: calc(100% - 8px);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 24px;
+  font-family: var(--font, 'DM Sans');
+}
+
+.connect-btn.fill {
+  background: var(--button-color, #000000);
+  color: var(--button-font-color, #FFFFFF);
+  border: none;
+}
+
+.connect-btn.outline {
+  background: transparent;
+  border: 2px solid var(--button-color, #000000);
+  color: var(--button-color, #000000);
+}
+
+.connect-btn.hard-shadow {
+  background: white;
+  border: 2px solid var(--button-color, #000000);
+  box-shadow: 4px 4px 0 var(--button-color, #000000);
+  transform: translate(-2px, -2px);
+}
+
+.connect-btn.hard-shadow:hover {
+  transform: translate(0, 0);
+}
+
+.connect-btn.soft-shadow {
+  background: white;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: var(--button-color, #000000);
+}
+
+.connect-btn.special-torn {
+  background: var(--button-color, #000000);
+  color: var(--button-font-color, #FFFFFF);
+  clip-path: polygon(0% 0%, 100% 3%, 100% 97%, 0% 100%);
+}
+
+.connect-btn.special-double {
+  background: transparent;
+  border: 2px solid var(--button-color, #000000);
+  outline: 1px solid var(--button-color, #000000);
+  outline-offset: 3px;
+  color: var(--button-color, #000000);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--lines-color, #666);
+  font-size: 14px;
+}
+
+.spark-icon {
+  font-size: 16px;
+}
+
+.spark-text {
+  font-weight: 500;
+}
